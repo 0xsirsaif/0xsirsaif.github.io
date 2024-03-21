@@ -4,7 +4,6 @@ permalink: "/:title.html"
 # Setup
 title:            saif's website
 repository:       0xsirsaif/0xsaif.github.io
-url:              https://0xsaif.github.io
 baseurl:          /
 author: &default-author
   name:           Muhammad Saif
@@ -70,9 +69,9 @@ sass:
 
 # Navigation
 nav:
-  - name:           "code"
-    href:           "https://github.com/hawkw"
-    kind:           "dir"
+  # - name:           "code"
+  #   href:           "https://github.com/hawkw"
+  #   kind:           "dir"
   # - name:           "art"
   #   href:           "/portfolio"
   #   kind:           "dir"
