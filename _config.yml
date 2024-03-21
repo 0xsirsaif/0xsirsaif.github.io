@@ -3,7 +3,6 @@ permalink: "/:title.html"
 
 # Setup
 title:            saif's website
-domain:           0xsaif.github.io
 url:              https://0xsaif.github.io
 baseurl:          /
 author: &default-author
