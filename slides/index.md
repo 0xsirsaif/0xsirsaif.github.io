@@ -1,6 +1,6 @@
 ---
 layout: dir
-title: 0xsaif.github.io/slides
+title: 0xsirsaif.github.io/slides
 cmd: ls -lat
 pwd: slides
 ---

@@ -1,6 +1,6 @@
 ---
 layout: dir
-title: 0xsaif.github.io/notes
+title: 0xsirsaif.github.io/notes
 cmd: "ls -la"
 pwd: notes
 ---
