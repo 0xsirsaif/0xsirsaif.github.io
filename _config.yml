@@ -5,10 +5,6 @@ permalink: "/:title.html"
 title:            saif's website
 repository:       0xsirsaif/0xsaif.github.io
 baseurl:          /
-url:              https://0xsaif.github.io
-author: &default-author
-  name:           Muhammad Saif
-  email:          muhamed.e.saif@gmail.com
 
 encoding: utf-8
 
