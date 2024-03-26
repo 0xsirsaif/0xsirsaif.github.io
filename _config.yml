@@ -51,6 +51,12 @@ defaults:
       type: "pages"
     values:
       layout: main
+  -
+    scope:
+      path: "drafts"
+      type: "pages"
+    values:
+      layout: main
 
 # plugins: ["jekyll-paginate"]
 
