@@ -6,9 +6,6 @@ title:            saif's website
 repository:       0xsirsaif/0xsirsaif.github.io
 url:              https://0xsirsaif.github.io/
 baseurl:          /
-author: &default-author
-  name:           Muhammad Saif
-  email:          muhamed.e.saif@gmail.com
 
 encoding: utf-8
 
@@ -37,8 +34,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      author: "saif"
-      author: *default_author
+      author: "0xsaif"
   -
     scope:
       path: "etc"
