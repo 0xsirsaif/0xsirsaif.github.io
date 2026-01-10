@@ -24,6 +24,11 @@
     </script>
   </head>
   <body class="site md">
+    <!-- Dark mode toggle -->
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+      <span id="theme-toggle-text">dark</span>
+    </button>
+
     <!-- begin subtemplate -->
     {% include anchor_headings.html
       html=content
@@ -32,5 +37,28 @@
       anchorClass="anchor"
     %}
     <!-- end subtemplate -->
+
+    <!-- Dark mode script -->
+    <script>
+      (function() {
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeToggleText = document.getElementById('theme-toggle-text');
+        const htmlElement = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        htmlElement.setAttribute('data-theme', currentTheme);
+        themeToggleText.textContent = currentTheme === 'dark' ? 'light' : 'dark';
+
+        themeToggle.addEventListener('click', function() {
+          const theme = htmlElement.getAttribute('data-theme');
+          const newTheme = theme === 'dark' ? 'light' : 'dark';
+
+          htmlElement.setAttribute('data-theme', newTheme);
+          localStorage.setItem('theme', newTheme);
+          themeToggleText.textContent = newTheme === 'dark' ? 'light' : 'dark';
+        });
+      })();
+    </script>
   </body>
 </html>
