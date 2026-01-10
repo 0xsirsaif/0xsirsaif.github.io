@@ -7,6 +7,26 @@
 
 /* Common vars */
 
+/* Light mode (default) */
+:root {
+  --body-text-color: black;
+  --background: white;
+  --gray: hsl(0, 0%, 40%);
+  --light-gray: hsl(0, 0%, 75%);
+  --pre-bg: #f9f9f9;
+  --border-color: black;
+}
+
+/* Dark mode */
+:root[data-theme="dark"] {
+  --body-text-color: #e0e0e0;
+  --background: #1a1a1a;
+  --gray: hsl(0, 0%, 60%);
+  --light-gray: hsl(0, 0%, 45%);
+  --pre-bg: #2a2a2a;
+  --border-color: #e0e0e0;
+}
+
 
 * {
   text-rendering: geometricPrecision,
@@ -100,7 +120,7 @@ a {
 
 img.titleimage {
   float: left;
-  border: 2px solid black;
+  border: 2px solid var(--border-color);
   border-radius: 8px;
 }
 
@@ -139,7 +159,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #f9f9f9;
+  background-color: var(--pre-bg);
 
   code {
     padding: 0;
@@ -230,4 +250,27 @@ header.post {
   margin-bottom: 1rem;
   float: left;
   color: $gray;
+}
+
+/* Dark mode toggle */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: 1px solid $body-text-color;
+  color: $body-text-color;
+  font-family: $font-family-code;
+  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  z-index: 1000;
+
+  &:hover {
+    background-color: $link-color;
+    color: $background;
+    border-color: $link-color;
+  }
 }
