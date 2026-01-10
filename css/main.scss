@@ -261,16 +261,20 @@ header.post {
   border: 1px solid $body-text-color;
   color: $body-text-color;
   font-family: $font-family-code;
-  font-size: 0.9rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  padding: 0.4rem 0.6rem;
   cursor: pointer;
   border-radius: 4px;
   transition: all 0.2s ease;
   z-index: 1000;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   &:hover {
     background-color: $link-color;
-    color: $background;
     border-color: $link-color;
+    transform: scale(1.1);
   }
 }
