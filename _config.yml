@@ -53,6 +53,12 @@ defaults:
       type: "pages"
     values:
       layout: main
+  -
+    scope:
+      path: "bookmarks"
+      type: "pages"
+    values:
+      layout: main
 
 # plugins: ["jekyll-paginate"]
 
@@ -73,6 +79,9 @@ sass:
 nav:
   - name:           "notes"
     href:           "/notes"
+    kind:           "dir"
+  - name:           "bookmarks"
+    href:           "/bookmarks"
     kind:           "dir"
   - name:           "etc"
     href:           "/etc"

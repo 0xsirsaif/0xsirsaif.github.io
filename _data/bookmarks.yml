@@ -1,0 +1,14 @@
+# List of bookmarked articles
+# Each entry should have:
+# - title: The article title
+# - url: The article URL
+# - date: Date bookmarked (YYYY-MM-DD)
+# - author: (optional) Article author
+# - description: (optional) Brief description
+
+# Example:
+# - title: "Example Article"
+#   url: "https://example.com/article"
+#   date: 2026-01-10
+#   author: "John Doe"
+#   description: "A great article about something"
