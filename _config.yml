@@ -5,7 +5,10 @@ permalink: "/:title.html"
 title:            saif's website
 repository:       0xsirsaif/0xsirsaif.github.io
 url:              https://0xsirsaif.github.io/
-baseurl:          /
+baseurl:          ""
+description:      "Notes on software engineering, databases, and systems programming"
+author:
+  name:           "Saif"
 
 encoding: utf-8
 
@@ -60,7 +63,8 @@ defaults:
     values:
       layout: main
 
-# plugins: ["jekyll-paginate"]
+plugins:
+  - jekyll-feed
 
 markdown: kramdown
 highlighter: rouge
