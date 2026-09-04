@@ -13,15 +13,9 @@ author:
 encoding: utf-8
 
 exclude:
-  - "website.sublime-project"
-  - "website.sublime-workspace"
+  - "drafts"
   - "*.log"
-  - "*.fdb_latexmk"
-  - "*.synctex.gz"
-  - "*.aux"
-  - "*.nix"
   - ".bundle"
-  - ".direnv"
   - "vendor"
 
 defaults:
@@ -41,18 +35,6 @@ defaults:
   -
     scope:
       path: "etc"
-      type: "pages"
-    values:
-      layout: main
-  -
-    scope:
-      path: "slides"
-      type: "pages"
-    values:
-      layout: main
-  -
-    scope:
-      path: "drafts"
       type: "pages"
     values:
       layout: main
@@ -86,9 +68,6 @@ nav:
     kind:           "dir"
   - name:           "bookmarks"
     href:           "/bookmarks"
-    kind:           "dir"
-  - name:           "etc"
-    href:           "/etc"
     kind:           "dir"
   - name:           "about.md"
     href:           "/"
